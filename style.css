@@ -73,9 +73,11 @@ body, HTML {
   padding-left: 20px;
   max-width: 1000px;
   margin-top: 50px;
-  padding: 10px;
   font-size: 20;
-  line-height: 0.1em;
+
+
+  display: table;
+  width: 100%;
 }
 
 .toparticle {
@@ -132,13 +134,23 @@ body, HTML {
 
 .buttons {
   height: 35px;
-  padding-right: 5px;
+  padding-right: 15px;
   
 }
 
-.buttoncontainer {
+.left-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.left-cell p {
   display: inline-block;
-  margin-left: 60%;
+}
+
+.right-cell {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
 }
 
 
