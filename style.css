@@ -145,6 +145,7 @@ body, HTML {
 
 .left-cell p {
   display: inline-block;
+  margin-left: 10px;
 }
 
 .right-cell {
@@ -153,6 +154,9 @@ body, HTML {
   text-align: center;
 }
 
+.right-cell img {
+  margin-top: 5px;
+  }
 
 
 * {box-sizing:border-box}
@@ -249,4 +253,19 @@ body, HTML {
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 300px;
+  width: 300px;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 300px;
+  width: 300px;
 }
