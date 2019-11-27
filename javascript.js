@@ -1,5 +1,4 @@
 var slideIndex = 1;
-showSlides(slideIndex)
 
 // Next/previous controls
 function plusSlides(n) {
@@ -25,4 +24,16 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
+}
+
+function youTubeAspect() {
+  //will calculate the size of a youtube video so it fits the article box.
+  var articleWidth = document.getElementsByClassName('toparticle')[0].offsetWidth - 40; //you have 20px padding, got to take 40px of total width.
+  var videoHeight = (articleWidth / 16)*9;
+  console.log(articleWidth);
+  var youTubeVideos = document.getElementsByClassName("youTubeClip");
+  for (i = 0; i < youTubeVideos.length; i++) {
+    youTubeVideos[i].style.width = articleWidth+"px";
+    youTubeVideos[i].style.height = videoHeight+"px";
+}
 }
