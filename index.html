@@ -2,13 +2,14 @@
 
 <head>
     <title>Team Tri-Beam</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <meta name="viewport" content="1100, initial-scale=0">
-
+    <link rel="stylesheet" media="only screen and (max-width: 999px)" href="mobile.css" />
+    <link rel="stylesheet" media="only screen and (min-width: 1000px)" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="javascript.js"></script>
 
 </head>
 
-<body>
+<body onload='showSlides(slideIndex);youTubeAspect();'>
     <div class="wrapper">
 
         <div class="header">
@@ -27,25 +28,22 @@
 
 
         <div class="maincontainer">
-            <div class="leftcontainer">
-
-            </div>
 
             <div class="centercontainer">
                 <!-- Slideshow container -->
                 <div class="slideshow-container">
 
                     <!-- Full-width images with number and caption text -->
-                    <div class="mySlides fade">
-                        <a href="team.html#jack"><img src="images/AODdende.png" style="width:100%"></a>
+                    <div class="mySlides fade" style='display:block!important;'>
+                        <a href="team.html#jack"><img src="images/AODdende.png"></a>
                     </div>
 
                     <div class="mySlides fade">
-                        <a href="team.html#james"><img src="images/ShenronRamp.png" style="width:100%"></a>
+                        <a href="team.html#james"><img src="images/ShenronRamp.png"></a>
                     </div>
 
                     <div class="mySlides fade">
-                        <a href="team.html#kai"><img src="images/Yamcha.png" style="width:100%"></a>
+                        <a href="team.html#kai"><img src="images/Yamcha.png"></a>
                     </div>
 
                     <!-- Next and previous buttons -->
@@ -55,18 +53,17 @@
                 <br>
 
                 <!-- The dots/circles -->
-                <div style="text-align:center">
+                <div class='dotsOrCircles' style="text-align:center">
                     <span class="dot" onclick="currentSlide(1)"></span>
                     <span class="dot" onclick="currentSlide(2)"></span>
                     <span class="dot" onclick="currentSlide(3)"></span>
                 </div>
-                <script src="javascript.js"></script>
+
 
 
                 <div class="articletopper">
                     <div class="left-cell">
-                        <img class="dragonball" src="images/dragonball.png">
-                        <p>Introduction</p>
+                        <p><img class="dragonball" src="images/dragonball.png">Introduction</p>
                     </div>
                     <div class="right-cell">
                         <a href="https://twitter.com/TeamTriBeam" target="_blank"><img class="buttons"
@@ -93,8 +90,7 @@
                 <!-- Start of Articles - TOP POST -->
                 <div class="articletopper">
                     <div class="left-cell">
-                        <img class="dragonball" src="images/dragonball.png">
-                        <p>Set 8 Multi-Box Unboxing with SCR pull! </p>
+                        <p><img class="dragonball" src="images/dragonball.png">Set 8 Multi-Box Unboxing with SCR pull! </p>
                     </div>
                     <div class="right-cell">
                         <a href="https://twitter.com/TeamTriBeam" target="_blank"><img class="buttons"
@@ -110,7 +106,7 @@
                         total and unboxed them all together. I was lucky and got a God Pack, but the real luck went to
                         one of the kids who comes to our store, who not only got the Baby Jenemba SCR in his pre-release
                         pack, but got the Dragonballs SCR in his box. </p>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/FZLPPdSEeIU" frameborder="0"
+                    <iframe class='youTubeClip' style='width:560px;height:315px' src="https://www.youtube.com/embed/FZLPPdSEeIU" frameborder="0"
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                     <p class="posted">Posted on 25th November 2019. Uploaded to Youtube on 25th November 2019.</p>
@@ -118,8 +114,7 @@
                 <!-- END OF TOP POST - COPY/PASTE UPWARDS TO ADD NEW POST-->
                 <div class="articletopper">
                     <div class="left-cell">
-                        <img class="dragonball" src="images/dragonball.png">
-                        <p>Series 6 Destroyer Kings Unboxing with SCR pull!</p>
+                        <p><img class="dragonball" src="images/dragonball.png">Series 6 Destroyer Kings Unboxing with SCR pull!</p>
                     </div>
                     <div class="right-cell">
                         <a href="https://twitter.com/TeamTriBeam" target="_blank"><img class="buttons"
@@ -134,7 +129,7 @@
                     <p>In this video we cracked open a few boxes of Series 6 Destroyer Kings, Jack was lucky enough to
                         get
                         one of the SCR's.</p>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/01L60KJPSF4" frameborder="0"
+                    <iframe class='youTubeClip' style='width:560px;height:315px' src="https://www.youtube.com/embed/01L60KJPSF4" frameborder="0"
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                     <p class="posted">Posted on 10th November 2019. Uploaded to Youtube on 10th April 2019.</p>
@@ -142,8 +137,7 @@
 
                 <div class="articletopper">
                     <div class="left-cell">
-                        <img class="dragonball" src="images/dragonball.png">
-                        <p>Namekians Vs Frieza Shenron</p>
+                        <p><img class="dragonball" src="images/dragonball.png">Namekians Vs Frieza Shenron</p>
                     </div>
                     <div class="right-cell">
                         <a href="https://twitter.com/TeamTriBeam" target="_blank"><img class="buttons"
@@ -158,7 +152,7 @@
                 <div class="toparticle">
 
                     <p>In this video it's Namekians(Hayden) Vs Frieza Shenron(Jack)</p>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ZlxfOAXoG0A" frameborder="0"
+                    <iframe class='youTubeClip' style='width:560px;height:315px' src="https://www.youtube.com/embed/ZlxfOAXoG0A" frameborder="0"
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                     <p class="posted">Posted on 10th November 2019. Uploaded to Youtube on 16th January 2019.</p>
@@ -180,8 +174,7 @@
 
             </div>
 
-            <div class="rightcontainer">
-            </div>
+            
 
         </div>
 
